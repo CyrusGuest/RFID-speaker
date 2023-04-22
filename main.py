@@ -7,7 +7,7 @@ from spotipy.oauth2 import SpotifyOAuth
 
 scope = "streaming"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    scope=scope, client_id='3993b982d9df4af19743bbdbaef21b52', client_secret='e524990dac2244bf80912ca4d5a39927'))
+    scope=scope, client_id='3993b982d9df4af19743bbdbaef21b52', client_secret='e524990dac2244bf80912ca4d5a39927', redirect_uri='http://google.com/'))
 songsNameDictionary = {
     "0005634691": "Jack Johnson - Upside Down",
     "0015442236": "Hozier - From Eden"
